@@ -1,8 +1,8 @@
 import React from 'react'
 import withStyles from 'isomorphic-style-loader/lib/withStyles'
-import s from 'src/styles/Header.css'
-import logoUrl from 'src/resources/logo-small.png'
-import logoUrl2x from 'src/resources/logo-small@2x.png'
+import s from '../styles/Header.css'
+import logoUrl from '../resources/logo-small.png'
+import logoUrl2x from '../resources/logo-small@2x.png'
 import Link from './Link'
 import Navigation from './Navigation'
 

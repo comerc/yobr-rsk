@@ -1,6 +1,6 @@
 import React from 'react'
 import withStyles from 'isomorphic-style-loader/lib/withStyles'
-import s from 'src/styles/Footer.css'
+import s from '../styles/Footer.css'
 import Link from './Link'
 
 const Footer = () => (

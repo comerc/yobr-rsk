@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import withStyles from 'isomorphic-style-loader/lib/withStyles'
-import s from 'src/styles/ErrorPage.css'
+import s from '../styles/ErrorPage.css'
 
 const ErrorPage = (props) => {
   if (__DEV__) {

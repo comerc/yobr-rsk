@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import withStyles from 'isomorphic-style-loader/lib/withStyles'
-import s from 'src/styles/Login.css'
+import s from '../styles/Login.css'
 
 const Login = ({ title }) => (
   <div className={s.root}>

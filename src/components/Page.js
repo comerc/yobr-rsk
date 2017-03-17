@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import withStyles from 'isomorphic-style-loader/lib/withStyles'
-import s from 'src/styles/Page.css'
+import s from '../styles/Page.css'
 
 const Page = ({ title, html }) => (
   <div className={s.root}>

@@ -1,7 +1,7 @@
 import React from 'react'
 import cx from 'classnames'
 import withStyles from 'isomorphic-style-loader/lib/withStyles'
-import s from 'src/styles/Navigation.css'
+import s from '../styles/Navigation.css'
 import Link from './Link'
 
 const Navigation = () => (

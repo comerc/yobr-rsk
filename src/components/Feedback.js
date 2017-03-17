@@ -1,6 +1,6 @@
 import React from 'react'
 import withStyles from 'isomorphic-style-loader/lib/withStyles'
-import s from 'src/styles/Feedback.css'
+import s from '../styles/Feedback.css'
 
 const Feedback = () => (
   <div className={s.root}>
