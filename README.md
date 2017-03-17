@@ -8,19 +8,4 @@ $ yarn install
 $ yarn start
 ```
 
-TODO вернуть в package.json
-
-```git
-"eslintConfig": {
-  "extends": [
-    "airbnb",
-+   "plugin:css-modules/recommended"
-  ],
-+ "plugins": [
-+   "css-modules"
-+ ],
-  "rules": {
--   "import/no-unresolved": "off",
-  }
-},
-```
+TODO ошибка import/no-unresolved для src/styles & src/resources
