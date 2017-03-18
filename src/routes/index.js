@@ -7,16 +7,16 @@ export default {
 
   // Keep in mind, routes are evaluated in order
   children: [
-    require('./Home').default,
-    require('./Contact').default,
-    require('./Login').default,
-    require('./Register').default,
-    require('./About').default,
-    require('./Privacy').default,
-    require('./Admin').default,
+    require('./home').default,
+    require('./contact').default,
+    require('./login').default,
+    require('./register').default,
+    require('./about').default,
+    require('./privacy').default,
+    require('./admin').default,
 
     // Wildcard routes, e.g. { path: '*', ... } (must go last)
-    require('./NotFound').default,
+    require('./notFound').default,
   ],
 
   async action({ next }) {

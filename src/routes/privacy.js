@@ -4,14 +4,14 @@ import Page from 'src/components/Page'
 
 export default {
 
-  path: '/about',
+  path: '/privacy',
 
   async action() {
-    const data = await require.ensure([], require => require('src/resources/About.md'), 'about')
+    const data = await require.ensure([], require => require('src/resources/privacy.md'), 'privacy')
 
     return {
       title: data.title,
-      chunk: 'about',
+      chunk: 'privacy',
       component: <Layout><Page {...data} /></Layout>,
     }
   },
