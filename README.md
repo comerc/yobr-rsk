@@ -8,4 +8,5 @@ $ yarn install
 $ yarn start
 ```
 
-TODO ошибка import/no-unresolved для src/styles & src/resources
+TODO пока отключил import/no-unresolved (eslint resolve)
+TODO пока нельзя использовать src/styles (eslint resolve)

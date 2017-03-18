@@ -160,7 +160,11 @@
       "browser": true
     },
     "rules": {
-      "semi": ["error", "never"],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "import/no-unresolved": "off",
       "import/extensions": "off",
       "import/no-extraneous-dependencies": "off",
       "react/jsx-filename-extension": "off",
