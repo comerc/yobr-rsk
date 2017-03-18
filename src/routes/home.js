@@ -7,7 +7,7 @@ export default {
 
   path: '/',
 
-  async action({ error }) {
+  async action() {
     const resp = await fetch('/graphql', {
       method: 'post',
       headers: {
@@ -22,7 +22,6 @@ export default {
     const { data } = await resp.json()
     if (!data || !data.news) throw new Error('Failed to load the news feed.')
     return {
-      test: error.test,
       title: 'React Starter Kit',
       component: <Layout><Home news={data.news} /></Layout>,
     }
