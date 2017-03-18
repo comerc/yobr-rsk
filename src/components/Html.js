@@ -38,8 +38,8 @@ const Html = ({ title, description, styles, scripts, state, children }) => (
         <script
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html:
-          'window.ga=function(){ga.q.push(arguments)}ga.q=[]ga.l=+new Date' +
-          `ga('create','${analytics.google.trackingId}','auto')ga('send','pageview')` }}
+          'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' +
+          `ga('create','${analytics.google.trackingId}','auto');ga('send','pageview');` }}
         />
       }
       {analytics.google.trackingId &&
