@@ -19,6 +19,17 @@ a {
 }
 
 /*
+ * Fix Material-UI
+ */
+
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: none;
+}
+
+/*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
