@@ -1,0 +1,31 @@
+@import './variables.css';
+
+.root {
+
+}
+
+.container {
+  ul {
+    margin: 0;
+    padding: 4px 0;
+  }
+
+  li {
+    white-space: nowrap;
+    display: inline;
+    &:after {
+      content: ', '
+    }
+    &:last-child:after {
+      content: ''
+    }
+  }
+}
+
+.subscribed {
+
+}
+
+.profiled {
+
+}
