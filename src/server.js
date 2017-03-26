@@ -7,6 +7,8 @@ import expressGraphQL from 'express-graphql'
 import jwt from 'jsonwebtoken'
 import React from 'react'
 import ReactDOM from 'react-dom/server'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import UniversalRouter from 'universal-router'
 import PrettyError from 'pretty-error'
 import App from './components/App'
@@ -28,9 +30,9 @@ const app = express()
 // Tell any CSS tooling (such as Material UI) to use all vendor prefixes if the
 // user agent is not known.
 // -----------------------------------------------------------------------------
-global.navigator = global.navigator || {}
-global.navigator.userAgent = global.navigator.userAgent || 'all'
-
+// global.navigator = global.navigator || {}
+// global.navigator.userAgent = global.navigator.userAgent || 'all'
+console.log('global', global.navigator)
 //
 // Register Node.js middleware
 // -----------------------------------------------------------------------------
@@ -118,8 +120,14 @@ app.get('*', async (req, res, next) => {
       return
     }
 
+    const muiTheme = getMuiTheme({}, { userAgent: req.headers['user-agent'] })
     const data = { ...route }
-    data.children = ReactDOM.renderToString(<App context={context}>{route.component}</App>)
+    data.children = ReactDOM.renderToString(
+      <App context={context}>
+        <MuiThemeProvider muiTheme={muiTheme}>
+          {route.component}
+        </MuiThemeProvider>
+      </App>)
     data.styles = [
       { id: 'css', cssText: [...css].join('') },
     ]

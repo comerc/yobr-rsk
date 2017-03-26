@@ -6,6 +6,7 @@ import Link from './Link'
 
 const Navigation = () => (
   <div className={s.root} role="navigation">
+    <Link className={s.link} to="/post/all">Blog</Link>
     <Link className={s.link} to="/about">About</Link>
     <Link className={s.link} to="/contact">Contact</Link>
     <span className={s.spacer}> | </span>
