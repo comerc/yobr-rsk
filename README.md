@@ -1,10 +1,11 @@
 # yobr
 
+- Поставить: [nodejs](https://nodejs.org/), [yarn](https://yarnpkg.com/), [git](https://www.atlassian.com/git/tutorials/install-git).
+- Клонировать и запустить проект:
 ```bash
+$ git clone git@github.com:comerc/yobrRSK.git
+$ cd yobrRSK
 $ yarn install
-```
-
-```bash
 $ yarn start
 ```
 
