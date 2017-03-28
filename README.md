@@ -1,5 +1,9 @@
 # yobr
 
+[DEMO](https://yobr-aimknojfwg.now.sh/)
+
+### SETUP
+
 - Поставить: [nodejs](https://nodejs.org/), [yarn](https://yarnpkg.com/), [git](https://www.atlassian.com/git/tutorials/install-git).
 - Клонировать и запустить проект:
 ```bash
