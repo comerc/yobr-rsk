@@ -1,6 +1,6 @@
 # yobr
 
-[DEMO](https://yobr-aimknojfwg.now.sh/post/all)
+[DEMO](https://yobr-rsk.now.sh/post/all)
 
 ### SETUP
 
